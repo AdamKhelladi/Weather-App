@@ -5,8 +5,14 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #222;
   font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -18,8 +24,53 @@ body {
 
 /* Change the color of selected text */
 ::selection {
-  background-color: white; /* Orange background */
-  color: black; /* White text color */
+  background-color: black; /* Orange background */
+  color: white; /* White text color */
 }
 /* End Global Rules  */
 
+/* Start Card */
+.card {
+  /* width: 90%; */
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.card .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .search input {
+  flex: 1;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgb(241, 241, 241);
+}
+
+.card .search .search-btn {
+  background-color: rgb(241, 241, 241);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.card .search .search-btn img {
+  width: 20px;
+}
+/* End Card */
